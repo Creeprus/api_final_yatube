@@ -16,4 +16,4 @@ class IsAuthorOrReadOnly(permissions.BasePermission):
 
 
 class IsAuthenticated(permissions.IsAuthenticated):
-    message = 'Adding customers not allowed11111'
+    message = 'Не аутентифицировано'

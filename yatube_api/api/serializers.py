@@ -47,6 +47,6 @@ class FollowSerializer(serializers.ModelSerializer):
         following = get_object_or_404(User, username=data['following'])
         if self.context['request'].user == following:
             raise serializers.ValidationError(
-                'You cannot follow youself!'
+                'Нельзя на себя подписаться'
             )
         return data
